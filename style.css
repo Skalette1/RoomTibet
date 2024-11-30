@@ -17,6 +17,10 @@ header {
     color: #fff;
 }
 
+#gora {
+    margin-top: -1.1rem;
+}
+
 .head {
     display: flex;
     justify-content: space-between;
