@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room_Tibet</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link rel="icon" href="Group 19 2.png">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container-for-all">
-    <header>
-
-        
-        <div class="head">
-            <nav>
-        
-                <input type="checkbox" name="" id="check">
-                    <div class="menu menu1"></div>
-                    <div class="menu menu2"></div>
-                    <div class="menu menu3"></div>
-                    <div class="menu menu4"></div>
-                <ul>
-                    <li>Главная</li>
-                    <li class="lic">Про гида</li>
-                    <li class="lic">Программа тура</li>
-                    <li class="lic">Стоимость</li>
-                    <li class="lic">Блог</li>
-                    <li class="lic">Контакты</li>
-                </ul>
-
-                <div class="ne-nuzhno"></div>
-                <svg id="gora" width="140" height="48" viewBox="0 0 137 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <svg id="gora" width="140" height="48" viewBox="0 0 137 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_1_167" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="137" height="48">
                     <path d="M137 0H0V48H137V0Z" fill="white"/>
                     </mask>
@@ -405,7 +370,3 @@
             <span>ИП Константинопольский К.К., 2023</span>
             <a href="#">Политика обработки персональных данных</a>
         </div>
-</div>
-
-</body>
-</html>

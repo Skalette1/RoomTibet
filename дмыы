@@ -1,0 +1,10 @@
+PS C:\Users\555\Desktop\rOOM> git init
+Reinitialized existing Git repository in C:/Users/555/Desktop/rOOM/.git/
+PS C:\Users\555\Desktop\rOOM> git add .
+PS C:\Users\555\Desktop\rOOM> git git commit -m "third commit"
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+PS C:\Users\555\Desktop\rOOM> git branch -M main
+PS C:\Users\555\Desktop\rOOM> git remote add origin https://github.com/Skalette1/RoomTibet
