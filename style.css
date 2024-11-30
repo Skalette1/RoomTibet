@@ -840,7 +840,7 @@ footer li::before {
         text-align: center;
         display: flex;
         justify-content: center;
-        margin-right: 23rem;
+        /* margin-right: 23rem; */
         margin-bottom: -14em;
     }
 

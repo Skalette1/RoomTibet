@@ -8,3 +8,4 @@ The most similar command is
         init
 PS C:\Users\555\Desktop\rOOM> git branch -M main
 PS C:\Users\555\Desktop\rOOM> git remote add origin https://github.com/Skalette1/RoomTibet
+git push -u origin main
