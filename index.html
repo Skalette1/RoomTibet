@@ -11,11 +11,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <style>
+        .nol {
+            opacity: 0;
+        }
+    </style>
+
     <div class="container-for-all">
     <header>
 
         
         <div class="head">
+            
             <nav>
         
                 <input type="checkbox" name="" id="check">
@@ -30,6 +37,7 @@
                     <li class="lic">Стоимость</li>
                     <li class="lic">Блог</li>
                     <li class="lic">Контакты</li>
+                    <button class="nav-button">Консультация</button>
                 </ul>
 
                 <div class="ne-nuzhno"></div>
@@ -41,7 +49,6 @@
                     <path d="M0.153499 27.9142C0.397899 27.8562 24.8152 22.0349 43.1998 13.8808C45.2449 12.9738 46.9008 12.4361 48.2956 12.1827C46.7329 13.7573 37.54 17.6827 44.882 18.3783C51.6186 19.0172 40.5214 27.0108 35.4343 29.917C22.0532 34.1597 13.3687 35.8259 13.2126 35.8555L13.3967 36.8371C13.4423 36.8284 14.2201 36.6793 15.6276 36.3679C23.0039 34.7354 47.7648 28.6221 76.1721 14.6517C80.1558 12.6925 83.4072 11.606 86.1436 11.2028C85.3414 15.3186 76.0532 24.42 90.8867 26.7182C104.416 28.8142 77.2846 34.1361 67.1729 36.8458C65.7145 37.2367 64.6097 37.5733 64.0327 37.8377C59.5683 39.8854 111.467 38.0435 134.676 37.9502C135.433 37.9769 136.206 37.9922 137 37.9922V36.9933C116.27 36.9933 108.928 27.5136 103.028 19.8966C96.8975 11.9809 92.0551 5.72774 75.7316 13.7553C71.9386 15.6195 68.1041 17.3982 64.2312 19.0902C60.8086 17.8722 58.7358 16.1204 56.9198 14.5827C53.5385 11.7195 51.0952 9.65046 42.9304 13.2725C24.6028 21.4006 0.243734 27.2086 0 27.2662L0.153499 27.9142Z" fill="#FDFDFD"/>
                     </g>
                     </svg>
-                <!-- <button>Консультация</button> -->
             </nav>
 
       
@@ -86,7 +93,8 @@
         <button type="submit">Найти программу</button>
         </div>
         </div>
-        <div class="nol" style="opacity: 0;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam suscipit eum, quis omnis nulla illo itaque pariatur impedit reiciendis voluptas nostrum, laborum at i</div>
+        <div class="nol">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam suscipit eum, quis omnis nulla illo itaque pariatur impedit reiciendis voluptas nostrum, laborum at i Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis expedita eum assumenda delectus totam impedit ratione repudiandae hic natus mollitia, dolor nihil at sed quibusdam! Quod, porro? Accusamus, maiores repellendus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates officiis officia, est aspernatur aliquid totam molestiae dolore recusandae dicta sapiente voluptas eveniet libero et tempora excepturi? Quos blanditiis ab voluptatum.
+        Blanditiis facilis atque quod quis accusamus fuga, natus iure esse perferendis nobis illo officia consectetur nemo inventore dolor, nihil culpa? Vero quibusdam deleniti, nulla repellendus voluptatibus iure soluta recusandae cum?</div>
     </header>    
 
     <div class="about">
@@ -257,7 +265,7 @@
             </div>
         </div>
 
-        <div class="section-card">
+        <div class="section-card card-fly">
             <img src="Rectangle 19.jpg" alt="">
             <div class="section-info">
                 <a href="#"> Долой сомнения! Весь мир открыт для вас!</a>
@@ -272,16 +280,16 @@
         <div class="section-card">
             <img src="Rectangle 192.png" alt="">
             <div class="section-info">
-                <a href="#">                    Как подготовиться к путешествию в одиночку?</a>
+                <a href="#">Как подготовиться к путешествию в одиночку?</a>
                 <p> Для современного мира базовый вектор развития предполагает.</p>
-            <div class="section-foot">
+            <div class="section-foot how">
                 <span style="color: gold;">01/04/2023</span>
                 <span>читать статью</span>
             </div>
             </div>
         </div>
 
-        <div class="section-card">
+        <div class="section-card card-indus">
             <img src="Rectangle 19i.png" alt="">
             <div class="section-info">
                 <a href="#">Индия… летим?</a>
@@ -350,7 +358,8 @@
                 
                 <div class="left">
                     <p>актуально</p>
-                    <h3 style="font-size: 2rem; font-weight: bold;">Получайте полезные рассылки о путешествиях</h3>
+                    <h3 class="left-visible-text" style="font-size: 2rem; font-weight: bold;">Получайте полезные рассылки о путешествиях</h3>
+                    <h3 class="left-hidden-text" style="font-size: 2rem; font-weight: bold;">Делимся впечатлениями</h3>
                 </div>
 
                 <div class="right">

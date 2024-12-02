@@ -15,6 +15,11 @@ header {
     background-position: center;
     background-size: cover;
     color: #fff;
+    position: relative;
+}
+
+#gora {
+    margin-left: 2rem;
 }
 
 .head {
@@ -26,48 +31,60 @@ header {
 }
 
 nav {
-    margin-right: 1rem;
-    /* opacity: ; */
+    margin-right: 4rem;
+    margin-top: 1.7rem;
+    font-size: 1.2rem;
 }
 
-nav button {
+.nav-button {
     display: inline;
-    opacity: 0;
-    background: #fff;
-    color: #1A3E3E;
+    padding: .8rem;
+    margin-top: .3rem;
+    transform: translateY(1%);
+    color: #fff;
+    background-color: #1A3E3E;
+    border: 1px solid var(--button);
+    transition: .6s all ease;
 }
 
-#check:checked~nav button {
-    opacity: 1;
+.nav-button:hover {
+    color: #1A3E3E;
+    background-color: #fff;
+    border: 1px solid var(--button);
+}
+
+nav ul {
+    position: absolute;
+    right: 25px;
 }
 
 nav ul li {
     list-style: none;
-    display: block;
+    display: inline;
     margin:0 .3rem;    
-    opacity: 0;
+    opacity: 1;
     width: 20%;
     transition: .6s all ease;
 }
 
-nav ul li::before {
+nav ul {
+    z-index: 99;
+    transition: .6s all ease;
+}
+
+/* nav ul li::before {
     content: url(Frame.png);
     margin:.7rem;
-}
+} */
 
 .lic {
     margin-top: 1rem;
 }
 
-nav svg {
-    position: relative;
-    top: -26rem;
-    left: 1em;
-}
 
 #check {
     opacity: 0;
-    transform: scale(3.5);
+    transform: scale(5.5);
     cursor: pointer;
     position: absolute;
     top: 30px;
@@ -75,6 +92,7 @@ nav svg {
 }
 
 .menu {
+    display: none;
     width: 21px;
     height: 2px;
     background: #fff;
@@ -83,11 +101,6 @@ nav svg {
     top: 30px;
     right: 20px;
     z-index: 100;
-}
-
-nav ul {
-    z-index: 99;
-    transition: .6s all ease;
 }
 
 .menu:nth-of-type(2),
@@ -116,10 +129,10 @@ nav ul {
     display: none;
 }
 
-#check:checked~ul {
+/* #check:checked~ul {
     background: var(--button);
     width: 1375px;
-    height: 150vh;
+    height: 100vh;
     overflow-y: hidden;
 }
 
@@ -129,6 +142,10 @@ nav ul {
 
 #check:checked~#gora{
     display: none;
+} */
+
+.nol {
+    opacity: 0;
 }
 
 h1 {
@@ -141,7 +158,6 @@ h1 {
 .input-box-father {
     width: 100%;
     display: flex;
-
     text-align: center;
 }
 
@@ -904,14 +920,13 @@ footer li::before {
         transform: translateX(20%);
     }
 
-    /* .wrapper {
-        overflow-x: hidden;
+    .wrapper {
         overflow-x: scroll;
     }
 
     .wrapper .card {
         height: 487.5px;
-    } */
+    }
 
     .section {
         display: flex;
@@ -1067,66 +1082,31 @@ footer li::before {
     }
 }
 
-@media(max-width: 1000px) {
-    .section {
-        display: flex;
-        /* flex-direction: column; */
-        flex-wrap: nowrap;
-        margin-left: -2em;
-        overflow: scroll;
-        width: 120%;
-        /* transform: scale(.9); */
+@media(max-width: 940px) {
+    nav ul {
+        opacity: 0;
     }
 
-    .section-card {
-        display: flex;
-        flex-direction: column;
-        padding: -2em 0;
+    #check:checked~ul {
+        background: var(--button);
+        width: 1375px;
+        height: 100vh;
+        overflow-y: hidden;
+    }
+    
+    #check:checked~ul li {
+        opacity: 1;
+    }
+    
+    #check:checked~#gora{
+        display: none;
     }
 
-    .section img {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        height: 65%;
-        transform: translate(0%, 10%);
-        margin-left: 2.1em;
-        margin-bottom: 7em;
-        max-height: 300px;
-        max-width: 275px;
-    }
-
-    .section-info {
-        margin-left: 0.5rem;
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .section-foot {
-        margin: -2em 0;
-    }
-
-    .section-foot span{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        margin: 2em;
+    .menu {
+        display: block;
     }
 
     
-    .card-fly .section-foot {
-        margin-top: .7em;
-    }
-
-    .how {
-        margin-top: 2em;
-    }
-    
-    .card-indus .section-foot {
-        margin-top: 11em;
-        /* transform: translateY(30%); */
-    }
-
 }
 
 @media(max-width: 700px) {
