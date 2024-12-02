@@ -855,6 +855,10 @@ footer li::before {
     header {
         margin: 0;
     }
+
+    .head {
+        margin: 0;
+    }
     
     .about {
         display: flex;
@@ -904,14 +908,13 @@ footer li::before {
         transform: translateX(20%);
     }
 
-    /* .wrapper {
-        overflow-x: hidden;
-        overflow-x: scroll;
+    .wrapper {
+        overflow: auto;
     }
 
     .wrapper .card {
         height: 487.5px;
-    } */
+    }
 
     .section {
         display: flex;
