@@ -47,7 +47,9 @@ nav ul li {
     margin:0 .3rem;    
     opacity: 0;
     width: 20%;
+    /* visibility: hidden; */
     transition: .6s all ease;
+    overflow: hidden;
 }
 
 nav ul li::before {
@@ -61,7 +63,7 @@ nav ul li::before {
 
 nav svg {
     position: relative;
-    top: -26rem;
+    top: -23.5rem;
     left: 1em;
 }
 
@@ -75,28 +77,31 @@ nav svg {
 }
 
 .menu {
-    width: 21px;
-    height: 2px;
+    width: 23px;
+    height: 3px;
+    border-radius: 5px;
     background: #fff;
     transition: .5s all ease-out;
     position: absolute;
     top: 30px;
     right: 20px;
     z-index: 100;
+    overflow: hidden;
 }
 
 nav ul {
     z-index: 99;
     transition: .6s all ease;
+    overflow: hidden;
 }
 
 .menu:nth-of-type(2),
 .menu:nth-of-type(3) {
-    width: 15px;
     top: 35px;
 }
 
 .menu:nth-of-type(4) {
+    width: 15px;
     top: 40px;
 }
 
@@ -120,15 +125,20 @@ nav ul {
     background: var(--button);
     width: 1375px;
     height: 150vh;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 #check:checked~ul li {
     opacity: 1;
+    overflow: hidden;
 }
 
-#check:checked~#gora{
+#check:checked~#gora {
     display: none;
+}
+
+#check:checked~.input-box {
+    visibility: hidden;
 }
 
 h1 {
@@ -388,37 +398,53 @@ button:hover {
 }
 
 .card {
-    transform: scale(1.3);
-    margin: 0 3rem;
-    position: relative;
-    z-index: 2;
-    min-height: 487.5px;
+    width: 380px;
+    height: 500px;
+    position: absolute;
+    /* transform: translateX(-50%) translateY(80%); */
+    padding: 40px 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--white-txt-clr);
+    border-radius: 30px;
+    visibility: visible;
+    transition: all 2.2s ease;
+    backdrop-filter: blur(6px);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    overflow-y: hidden;
 }
 
 .info-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
     position: absolute;
-    bottom: -16.9em;
+    bottom: -12.9em;
     left: 0;
     width: 100%;
     transition: 2s all ease;
     color: #fff;
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: 2rem;
     z-index: .1;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 .card-text-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: .3rem;
-    backdrop-filter: blur(7px);
+    padding-top: .4rem;
+    margin: 1.3rem 0;
+    backdrop-filter: blur(9px);
     border-radius: 30px;
 }
 
 .price-card {
-    margin:.7rem .5rem;
+    margin:.7rem 1rem;
     background-color: rgba(234, 229, 229, 0.2);
     padding: .4rem;
     width: 3rem;
@@ -435,17 +461,21 @@ button:hover {
     opacity: 0;
     margin-top: 1.3rem;
     padding-left: .5rem;
-    font-size: .9rem;
+    font-size: 1.5rem;
 }
 
 .hidden-text button {
     border-radius: 4px;
-    padding: .3rem;
+    padding: .6rem;
     color: #ffffff;
     background: var(--button);
     border: 1px solid var(--button);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: auto;
 }
 
 .card:hover .card-text-top {
@@ -453,9 +483,9 @@ button:hover {
 }
 
 .card:hover .info-card{
-    transform: translateY(-79%);
+    transform: translateY(-78%);
     height: 100%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     border-radius: 30px;
 }
 
@@ -476,9 +506,9 @@ button:hover {
     background: url('фоновое изображение.jpg');
     background-position: center;
     background-size: cover;
-    min-height: 375px;
-    min-width: 285px;
-    border-radius: 32px;
+    width: 350px;
+    height: 450px;
+    border-radius: 37px;
     position: relative;
     display: flex;
 }
@@ -487,9 +517,9 @@ button:hover {
     background: url('фоновое изображение2 (2).jpg');
     background-position: center;
     background-size: cover;
-    min-height: 375px;
-    min-width: 285px;
-    border-radius: 32px;
+    width: 350px;
+    height: 450px;
+    border-radius: 37px;
     position: relative;
 }
 
@@ -497,9 +527,9 @@ button:hover {
     background: url('фоновое изображение3.jpg');
     background-position: center;
     background-size: cover;
-    min-height: 375px;
-    min-width: 285px;
-    border-radius: 32px;
+    width: 350px;
+    height: 450px;
+    border-radius: 37px;
     position: relative;
 }
 
@@ -507,7 +537,7 @@ button:hover {
     position: absolute;
     /* transform: translateY(140%);
     transform: translateX(180%); */
-    transform: translate(339%, 120%);
+    transform: translate(484%, 120%);
 }
 
 .foot-card {
@@ -840,6 +870,10 @@ footer li::before {
 
 @media (max-width:600px) {
 
+    .container-for-all {
+        overflow: hidden;
+    }
+
     .img1 {
         display: none;
     }
@@ -854,6 +888,7 @@ footer li::before {
 
     header {
         margin: 0;
+        width: 100%;
     }
 
     .head {
@@ -909,6 +944,8 @@ footer li::before {
     }
 
     .wrapper {
+        display: flex;
+        flex: 0 0 auto;
         overflow: auto;
     }
 
