@@ -27,7 +27,6 @@ header {
 
 nav {
     margin-right: 1rem;
-    /* opacity: ; */
 }
 
 nav button {
@@ -151,7 +150,6 @@ h1 {
 .input-box-father {
     width: 100%;
     display: flex;
-
     text-align: center;
 }
 
@@ -390,24 +388,22 @@ button:hover {
 
 .wrapper {
     display: flex;
-    /* flex: 1 1 auto; */
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     gap: 1.7rem;
+    overflow: auto;
 }
 
 .card {
     width: 380px;
     height: 500px;
     position: absolute;
-    /* transform: translateX(-50%) translateY(80%); */
     padding: 40px 30px;
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--white-txt-clr);
     border-radius: 30px;
     visibility: visible;
-    transition: all 2.2s ease;
+    transition: all 2.6s ease;
     backdrop-filter: blur(6px);
     z-index: 10;
     display: flex;
@@ -422,15 +418,16 @@ button:hover {
     flex-direction: column;
     flex: 0 0 auto;
     position: absolute;
-    bottom: -15.3em;
+    bottom: -10.9em;
     left: 0;
     width: 100%;
     transition: 2s all ease;
     color: #fff;
     font-weight: 800;
-    font-size: 1.6rem;
+    font-size: 2rem;
     z-index: .1;
     border-radius: 50px;
+    
 }
 
 .card-text-top {
@@ -444,17 +441,19 @@ button:hover {
 }
 
 .price-card {
-    margin:.7rem 1rem;
+    margin: 1.7rem 1.3rem;
     background-color: rgba(234, 229, 229, 0.2);
     padding: .4rem;
     width: 3rem;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .levo {
     display: flex;
     flex-direction: column;
     padding: 0.7rem;
+    margin: .4rem .7rem;
 }
 
 .hidden-text {
@@ -478,19 +477,21 @@ button:hover {
     margin-inline: auto;
 }
 
-.card:hover .card-text-top {
-    backdrop-filter: blur(0);
-}
-
 .card:hover .info-card{
-    transform: translateY(-74%);
+    transform: translateY(-10.9em);
     height: 100%;
-    backdrop-filter: blur(5px);
-    border-radius: 30px;
+    backdrop-filter: blur(9px);
+    border-radius: 30px; 
 }
 
 .card:hover .hidden-text {
     opacity: 1;
+}
+
+.card:hover {
+    backdrop-filter: blur(9px);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .info-card button:hover {
@@ -674,6 +675,7 @@ button:hover {
 .img-container-foot {
     transform: scale(1);
     text-align: center;
+    cursor: zoom-in;
 }
 
 .img-container-foot img {
@@ -879,11 +881,12 @@ footer li::before {
     }
 
     .img2 {
-        text-align: center;
-        display: flex;
-        justify-content: center;
+        /* text-align: center;
+        /* display: flex;
+        justify-content: center; */
         margin-right: 24rem;
-        margin-bottom: -14em;
+        margin-bottom: -14em; 
+        display: none;
     }
 
     header {
@@ -946,7 +949,6 @@ footer li::before {
     .wrapper {
         display: flex;
         flex: 0 0 auto;
-        overflow: auto;
     }
 
     .wrapper .card {
@@ -955,12 +957,10 @@ footer li::before {
 
     .section {
         display: flex;
-        /* flex-direction: column; */
         flex-wrap: nowrap;
         margin-left: -2em;
         overflow: scroll;
         width: 120%;
-        /* transform: scale(.9); */
     }
 
     .section-card {
@@ -997,7 +997,6 @@ footer li::before {
         align-items: flex-end;
         margin: 2em;
     }
-
     
     .card-fly .section-foot {
         margin-top: .7em;

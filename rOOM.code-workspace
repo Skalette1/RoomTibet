@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../ШРИФТЫ"
+		},
+		{
+			"path": "../Nunito Sans"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "rOOM",
+		"liveServer.settings.port": 5501
+	}
+}
