@@ -70,10 +70,10 @@ nav svg {
   opacity: 0;
   transform: scale(3.5);
   cursor: pointer;
-  position: fixed; /* Фиксируем чекбокс */
+  position: fixed;
   top: 30px;
   right: 20px;
-  z-index: 101; /* Высокий z-index для перекрытия */
+  z-index: 101; 
 }
 
 .menu {
@@ -124,7 +124,7 @@ nav ul {
 #check:checked~ul {
   background: var(--button);
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -201,7 +201,6 @@ option {
     border: 1px solid #fff;
     width: 17rem;
     padding: 1.1rem;
-    /* padding-bottom: 2rem; */
 }
 
 select option {
