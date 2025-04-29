@@ -67,25 +67,26 @@ nav svg {
 }
 
 #check {
-    opacity: 0;
-    transform: scale(3.5);
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    right: 20px;
+  opacity: 0;
+  transform: scale(3.5);
+  cursor: pointer;
+  position: fixed; /* Фиксируем чекбокс */
+  top: 30px;
+  right: 20px;
+  z-index: 101; /* Высокий z-index для перекрытия */
 }
 
 .menu {
-    width: 23px;
-    height: 3px;
-    border-radius: 5px;
-    background: #fff;
-    transition: .5s all ease-out;
-    position: absolute;
-    top: 30px;
-    right: 20px;
-    z-index: 100;
-    overflow: hidden;
+  width: 23px;
+  height: 3px;
+  border-radius: 5px;
+  background: #fff;
+  transition: .5s all ease-out;
+  position: fixed; /* Фиксируем полоски меню */
+  top: 30px;
+  right: 20px;
+  z-index: 100;
+  overflow: hidden;
 }
 
 nav ul {
@@ -121,15 +122,24 @@ nav ul {
 }
 
 #check:checked~ul {
-    background: var(--button);
-    width: 1375px;
-    height: 150vh;
-    overflow: hidden;
+  background: var(--button);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: hidden;
+  z-index: 98;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 4rem;
 }
 
 #check:checked~ul li {
-    opacity: 1;
-    overflow: hidden;
+  opacity: 1;
+  width: 80%;
+  text-align: left;
 }
 
 #check:checked~#gora {
@@ -138,6 +148,10 @@ nav ul {
 
 #check:checked~.input-box {
     visibility: hidden;
+}
+
+#check:checked ~ body {
+  overflow: hidden;
 }
 
 h1 {

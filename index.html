@@ -11,6 +11,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const check = document.getElementById('check');
+      check.addEventListener('change', function() {
+        if(this.checked) {
+          document.body.classList.add('menu-open');
+        } else {
+          document.body.classList.remove('menu-open');
+        }
+      });
+    });
+  </script>
     <style>
         .nol {
             opacity: 0;
@@ -103,7 +115,6 @@
         <img src="Rectangle 5.png" alt="" style="z-index: .9;" class="img1">
         <video src="https://youtu.be/WujKJpxaUHk"></video>
         <img src="reca.jpeg" alt=""  style="border-radius: 1rem; z-index: 1;" class="img2">
-        <!-- style="border-radius: 1rem; z-index: 1; -->
         </div>
         <div class="text-container">
             <p style="color: rgb(155, 133, 9);">о нашем походе</p>
